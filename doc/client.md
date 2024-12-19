@@ -5,11 +5,12 @@ The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
+| `environment` | `Environment` | The API environment. <br> **Default: `Environment.Test`** |
 | `timeout` | `number` | Timeout for API calls.<br>*Default*: `0` |
 | `httpClientOptions` | `Partial<HttpClientOptions>` | Stable configurable http client options. |
 | `unstableHttpClientOptions` | `any` | Unstable configurable http client options. |
-| `mppTokenCredentials` | [`MppTokenCredentials`]($a/custom-header-signature.md) | The credential object for mppToken |
-| `oAuthTokenPostCredentials` | [`OAuthTokenPostCredentials`]($a/custom-header-signature-1.md) | The credential object for oAuthTokenPost |
+| `mppTokenCredentials` | [`MppTokenCredentials`](auth/custom-header-signature.md) | The credential object for mppToken |
+| `oAuthTokenPostCredentials` | [`OAuthTokenPostCredentials`](auth/custom-header-signature-1.md) | The credential object for oAuthTokenPost |
 
 ## HttpClientOptions
 
@@ -43,10 +44,11 @@ const client = new Client({
     'X-Apigee-Authorization': 'X-Apigee-Authorization'
   },
   timeout: 0,
+  environment: Environment.Test,
 });
 ```
 
-## Shell EV Client
+## Shell SmartPay API Client
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 

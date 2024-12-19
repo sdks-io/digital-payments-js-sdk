@@ -1,16 +1,16 @@
 
-# Fault Response Fault
+# Fault
 
 ## Structure
 
-`FaultResponseFault`
+`Fault`
 
 ## Fields
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `faultstring` | `string \| undefined` | Optional | The description of the error. |
-| `detail` | [`FaultResponseFaultDetail \| undefined`](../../doc/models/fault-response-fault-detail.md) | Optional | - |
+| `detail` | [`Detail \| undefined`](../../doc/models/detail.md) | Optional | - |
 
 ## Example (as JSON)
 

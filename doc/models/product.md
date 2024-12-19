@@ -1,9 +1,9 @@
 
-# Finalise Fueling Request Products Items
+# Product
 
 ## Structure
 
-`FinaliseFuelingRequestProductsItems`
+`Product`
 
 ## Fields
 

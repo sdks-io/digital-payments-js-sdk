@@ -1,11 +1,11 @@
 
-# Around Location Array Data Items Loc
+# Loc
 
 Object containing address details/elements
 
 ## Structure
 
-`AroundLocationArrayDataItemsLoc`
+`Loc`
 
 ## Fields
 

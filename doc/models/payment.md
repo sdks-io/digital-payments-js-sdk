@@ -1,9 +1,9 @@
 
-# Finalise Fueling Request Payment
+# Payment
 
 ## Structure
 
-`FinaliseFuelingRequestPayment`
+`Payment`
 
 ## Fields
 

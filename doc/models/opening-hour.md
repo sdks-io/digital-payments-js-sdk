@@ -1,9 +1,9 @@
 
-# Around Location Array Data Items Opening Hours Items
+# Opening Hour
 
 ## Structure
 
-`AroundLocationArrayDataItemsOpeningHoursItems`
+`OpeningHour`
 
 ## Fields
 

@@ -1,9 +1,9 @@
 
-# Fault Response Fault Detail
+# Detail
 
 ## Structure
 
-`FaultResponseFaultDetail`
+`Detail`
 
 ## Fields
 

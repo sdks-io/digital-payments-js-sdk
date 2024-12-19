@@ -9,7 +9,7 @@ Documentation for accessing and setting credentials for MppToken.
 
 | Name | Type | Description | Setter |
 |  --- | --- | --- | --- |
-| Authorization | `string` | Digital Payments access token ([How to obtain Digital Payments access token?](page:guided-walkthrough/walkthrough1)) | `authorization` |
+| Authorization | `string` | Access token to be passed for Mobile Payment Platform Authentication ([How to obtain Digital Payments access token?](page:guided-walkthrough/walkthrough1)) | `authorization` |
 
 
 

@@ -1,9 +1,11 @@
 
-# Payment Details Items
+# Payment Details
+
+Object containing Payment details
 
 ## Structure
 
-`PaymentDetailsItems`
+`PaymentDetails`
 
 ## Fields
 
@@ -17,8 +19,8 @@
 
 ```json
 {
-  "paymentCategory": "paymentCategory0",
-  "paymentMethodId": "paymentMethodId2",
+  "paymentCategory": "paymentCategory4",
+  "paymentMethodId": "paymentMethodId6",
   "paymentProperties": {
     "paymentType": "paymentType8",
     "clientMetadataId": "clientMetadataId2",

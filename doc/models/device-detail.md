@@ -1,9 +1,9 @@
 
-# Prepare Fueling Request Device Details Items
+# Device Detail
 
 ## Structure
 
-`PrepareFuelingRequestDeviceDetailsItems`
+`DeviceDetail`
 
 ## Fields
 
@@ -18,10 +18,10 @@
 
 ```json
 {
-  "deviceId": "deviceId2",
-  "model": "model0",
-  "osVersion": "osVersion2",
-  "otherDeviceInformation": "otherDeviceInformation2"
+  "deviceId": "deviceId4",
+  "model": "model2",
+  "osVersion": "osVersion4",
+  "otherDeviceInformation": "otherDeviceInformation0"
 }
 ```
 

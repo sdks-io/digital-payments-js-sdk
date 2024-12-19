@@ -19,8 +19,8 @@
 | `siteAddress` | `string \| undefined` | Optional | - |
 | `originalPrice` | `number \| undefined` | Optional | - |
 | `discount` | `number \| undefined` | Optional | - |
-| `payment` | [`FinaliseFuelingRequestPayment \| undefined`](../../doc/models/finalise-fueling-request-payment.md) | Optional | - |
-| `products` | [`FinaliseFuelingRequestProductsItems[] \| undefined`](../../doc/models/finalise-fueling-request-products-items.md) | Optional | - |
+| `payment` | [`Payment \| undefined`](../../doc/models/payment.md) | Optional | - |
+| `products` | [`Product[] \| undefined`](../../doc/models/product.md) | Optional | - |
 | `mppTransactionId` | `string \| undefined` | Optional | - |
 
 ## Example (as JSON)

@@ -11,7 +11,7 @@ An error response.
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `fault` | [`FaultResponseFault \| undefined`](../../doc/models/fault-response-fault.md) | Optional | - |
+| `fault` | [`Fault \| undefined`](../../doc/models/fault.md) | Optional | - |
 
 ## Example (as JSON)
 

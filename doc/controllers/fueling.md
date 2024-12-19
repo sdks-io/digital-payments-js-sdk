@@ -113,14 +113,12 @@ const body: PrepareFuelingRequest = {
   stationId: '9955',
   pumpId: '1',
   sourceApplication: 'PARTNER_APP_EXAMPLE',
-  paymentDetails: [
-    {
-      paymentMethodId: 'euroShell',
-      paymentProperties: {
-        cardIdentifier: '98e4ffd3-4146-4e94-8445-e02f4ce87a77',
-      },
-    }
-  ],
+  paymentDetails: {
+    paymentMethodId: 'euroShell',
+    paymentProperties: {
+      cardIdentifier: '98e4ffd3-4146-4e94-8445-e02f4ce87a77',
+    },
+  },
   loyaltyDetails: [
     {
       loyaltyId: '70043201060148830',
