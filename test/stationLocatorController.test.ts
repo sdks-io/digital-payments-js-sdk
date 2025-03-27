@@ -33,6 +33,7 @@ describe('StationLocatorController', () => {
         undefined,
         undefined,
         undefined,
+        undefined,
         undefined
       )
     );

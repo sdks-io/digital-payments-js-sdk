@@ -55,3 +55,4 @@ export type { PaymentProperties } from './models/paymentProperties';
 export type { PrepareFuelingRequest } from './models/prepareFuelingRequest';
 export type { PrepareFuelingResponse } from './models/prepareFuelingResponse';
 export type { Product } from './models/product';
+export { TypeEnum } from './models/typeEnum';

@@ -29,7 +29,7 @@ async mpayV1TokensRefPut(
 
 ## Response Type
 
-[`PaymentEnablementResponse`](../../doc/models/payment-enablement-response.md)
+This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `result` property of this instance returns the response data which is of type [PaymentEnablementResponse](../../doc/models/payment-enablement-response.md).
 
 ## Example Usage
 

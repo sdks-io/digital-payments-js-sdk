@@ -40,7 +40,7 @@ async mppToken(
 
 ## Response Type
 
-[`MppAccesTokenResponse`](../../doc/models/mpp-acces-token-response.md)
+This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `result` property of this instance returns the response data which is of type [MppAccesTokenResponse](../../doc/models/mpp-acces-token-response.md).
 
 ## Example Usage
 
@@ -98,7 +98,7 @@ async mppPrepareFueling(
 
 ## Response Type
 
-[`PrepareFuelingResponse`](../../doc/models/prepare-fueling-response.md)
+This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `result` property of this instance returns the response data which is of type [PrepareFuelingResponse](../../doc/models/prepare-fueling-response.md).
 
 ## Example Usage
 
@@ -173,7 +173,7 @@ async mppCancelFueling(
 
 ## Response Type
 
-`void`
+This method returns an [`ApiResponse`](../../doc/api-response.md) instance.
 
 ## Example Usage
 

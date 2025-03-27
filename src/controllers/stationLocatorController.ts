@@ -9,6 +9,7 @@ import {
   AroundLocationArray,
   aroundLocationArraySchema,
 } from '../models/aroundLocationArray';
+import { TypeEnum, typeEnumSchema } from '../models/typeEnum';
 import { array, number, optional, string } from '../schema';
 import { BaseController } from './baseController';
 import { StationLocatorBadRequestError } from '../errors/stationLocatorBadRequestError';
@@ -37,6 +38,14 @@ export class StationLocatorController extends BaseController {
    *                               Filter locations so that only those with a Toilet are returned).
    * @param countries  This enables requestor to filter locations based on one or more Countries (i.e. by
    *                               country codes).
+   * @param type       All fuel stations are of at least one Type, indicating whether it is Shell-branded
+   *                               or not, and if the station can be used by trucks. Note that a station can have more
+   *                               than one Type (e.g. Shell retail sites (Type=0) can also be truck friendly (Type=2)).
+   *                               Type values are as follows:    * 0 = Shell owned/branded stations that are not
+   *                               also Type=2 or Type=3   * 1 = Partner stations accepting Shell Card   * 2 = Shell
+   *                               owned/branded stations that are truck friendly but not Type=3   * 3 = Shell
+   *                               owned/branded stations that are truck only   <br/>**When type is not provided, API
+   *                               will return type 0 and 2 only.**
    * @return Response from the API call
    */
   async stationlocatorV1StationsGetAroundLocation(
@@ -48,6 +57,7 @@ export class StationLocatorController extends BaseController {
     n?: number,
     amenities?: string[],
     countries?: string[],
+    type?: TypeEnum,
     requestOptions?: RequestOptions
   ): Promise<ApiResponse<AroundLocationArray>> {
     const req = this.createRequest('GET', '/SiteData/v1/stations');
@@ -60,6 +70,7 @@ export class StationLocatorController extends BaseController {
       n: [n, optional(number())],
       amenities: [amenities, optional(array(string()))],
       countries: [countries, optional(array(string()))],
+      type: [type, optional(typeEnumSchema)],
     });
     req.query('m', mapped.m);
     req.query('lon', mapped.lon);
@@ -69,6 +80,7 @@ export class StationLocatorController extends BaseController {
     req.query('n', mapped.n);
     req.query('amenities', mapped.amenities);
     req.query('countries', mapped.countries);
+    req.query('type', mapped.type);
     req.throwOn(400, StationLocatorBadRequestError, 'Bad request');
     req.throwOn(401, StationLocatorUnauthorizedError, 'Unauthorized');
     req.throwOn(403, StationLocatorForbiddenError, 'Forbbiden');

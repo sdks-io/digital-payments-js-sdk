@@ -10,10 +10,10 @@ The APIs detailed within this document will enable Shell's Fleet Solutions Custo
 Run the following command from your project directory to install the package from npm:
 
 ```bash
-npm install digital-payments-sdk@1.1.0
+npm install digital-payments-sdk@1.2.0
 ```
 
-For additional package details, see the [Npm page for the digital-payments-sdk@1.1.0 npm](https://www.npmjs.com/package/digital-payments-sdk/v/1.1.0).
+For additional package details, see the [Npm page for the digital-payments-sdk@1.2.0 npm](https://www.npmjs.com/package/digital-payments-sdk/v/1.2.0).
 
 ## Test the SDK
 
@@ -33,7 +33,7 @@ npm run test:coverage
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -43,8 +43,8 @@ The following parameters are configurable for the API Client:
 | `timeout` | `number` | Timeout for API calls.<br>*Default*: `0` |
 | `httpClientOptions` | `Partial<HttpClientOptions>` | Stable configurable http client options. |
 | `unstableHttpClientOptions` | `any` | Unstable configurable http client options. |
-| `mppTokenCredentials` | [`MppTokenCredentials`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/auth/custom-header-signature.md) | The credential object for mppToken |
-| `oAuthTokenPostCredentials` | [`OAuthTokenPostCredentials`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/auth/custom-header-signature-1.md) | The credential object for oAuthTokenPost |
+| `mppTokenCredentials` | [`MppTokenCredentials`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/auth/custom-header-signature.md) | The credential object for mppToken |
+| `oAuthTokenPostCredentials` | [`OAuthTokenPostCredentials`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/auth/custom-header-signature-1.md) | The credential object for oAuthTokenPost |
 
 ### HttpClientOptions
 
@@ -97,19 +97,20 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`MppToken (Custom Header Signature)`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/auth/custom-header-signature.md)
-* [`oAuthTokenPost (Custom Header Signature)`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/auth/custom-header-signature-1.md)
+* [`MppToken (Custom Header Signature)`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/auth/custom-header-signature.md)
+* [`oAuthTokenPost (Custom Header Signature)`](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/auth/custom-header-signature-1.md)
 
 ## List of APIs
 
-* [Shell API Platform Security Authentication](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/controllers/shell-api-platform-security-authentication.md)
-* [Digital Payment Enablement](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/controllers/digital-payment-enablement.md)
-* [Station Locator](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/controllers/station-locator.md)
-* [Partner Notification](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/controllers/partner-notification.md)
-* [Fueling](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/controllers/fueling.md)
+* [Shell API Platform Security Authentication](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/controllers/shell-api-platform-security-authentication.md)
+* [Digital Payment Enablement](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/controllers/digital-payment-enablement.md)
+* [Station Locator](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/controllers/station-locator.md)
+* [Partner Notification](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/controllers/partner-notification.md)
+* [Fueling](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/controllers/fueling.md)
 
 ## Classes Documentation
 
-* [ApiResponse](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/api-response.md)
-* [ApiError](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.1.0/doc/api-error.md)
+* [ApiResponse](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/api-response.md)
+* [HttpRequest](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/http-request.md)
+* [ApiError](https://www.github.com/sdks-io/digital-payments-js-sdk/tree/1.2.0/doc/api-error.md)
 

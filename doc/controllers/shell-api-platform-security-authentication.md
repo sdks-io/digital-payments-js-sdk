@@ -35,7 +35,7 @@ async oauthTokenPost(
 
 ## Response Type
 
-[`AccessTokenResponse`](../../doc/models/access-token-response.md)
+This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `result` property of this instance returns the response data which is of type [AccessTokenResponse](../../doc/models/access-token-response.md).
 
 ## Example Usage
 
